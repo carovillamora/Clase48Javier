@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pelea</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBD42RL8sGJJds73VB0VgVJLEuGUvZgX4w",
+        authDomain: "pelea-d4e2a.firebaseapp.com",
+        databaseURL: "https://pelea-d4e2a-default-rtdb.firebaseio.com",
+        projectId: "pelea-d4e2a",
+        storageBucket: "pelea-d4e2a.appspot.com",
+        messagingSenderId: "385636228579",
+        appId: "1:385636228579:web:1fc162e657592c8fa4d4d6"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
